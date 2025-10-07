@@ -6,14 +6,14 @@ function SocialLinks() {
   return (
     <div className="social-links">
       <a
-        href="https://github.com/YOUR_GITHUB_USERNAME"
+        href="https://github.com/ultranative96"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaGithub size={30} />
       </a>
       <a
-        href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+        href="https://linkedin.com/nhlayiseko hlungwani"
         target="_blank"
         rel="noopener noreferrer"
       >

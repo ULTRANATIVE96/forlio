@@ -180,8 +180,7 @@
 /* Orbit container for each link */
 .nav-link {
   position: absolute;
-  top: 35%;
-  width:-10%;
+  top: 50%;
   left: 25%;
   transform-origin: center;
   animation: orbit 15s linear infinite;

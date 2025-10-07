@@ -4,10 +4,10 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; /* correct property */
+   /* correct property */
   background: #f5f5f5;
   color: #333;
-
+}
 .portfolio {
   text-align: center;
 }
@@ -102,10 +102,9 @@ body {
 
 .contact-form button {
   padding: 0.75rem;
-  right: -6px;
   border: none;
-  background: #63ffd8;
-  color: rgb(185, 40, 40);
+  background: #6c63ff;
+  color: white;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -118,8 +117,6 @@ body {
   margin-top: 0.5rem;
   font-style: italic;
   color: #555;
-}
-font-smoothing: grayscale;
 }
 
 code {

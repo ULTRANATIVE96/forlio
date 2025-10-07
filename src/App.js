@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Buttons from "./Buttons";
 import Languages from "./languages";
 import Projects from "./projects";
+import SocialLinks from "./components/SocialLinks";
+
 
 function App() {
   useEffect(() => {
