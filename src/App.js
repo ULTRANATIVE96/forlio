@@ -5,7 +5,6 @@ import Languages from "./languages";
 import Projects from "./projects";
 import SocialLinks from "./components/SocialLinks";
 
-
 function App() {
   useEffect(() => {
     const handleScroll = () => {
@@ -28,18 +27,22 @@ function App() {
   }, []);
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Buttons />
-            <Languages />
-          </>
-        }
-      />
-      <Route path="/projects" element={<Projects />} />
-    </Routes>
+    <>
+      {/* 🔹 Keep the Router in index.js, not here */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Buttons />
+              <Languages />
+              <SocialLinks /> {/* ✅ Add this so your social links appear */}
+            </>
+          }
+        />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </>
   );
 }
 
