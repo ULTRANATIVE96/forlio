@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/forlio/static/css/main.e57ded60.css",
+    "main.js": "/forlio/static/js/main.04c91829.js",
+    "index.html": "/forlio/index.html",
+    "main.e57ded60.css.map": "/forlio/static/css/main.e57ded60.css.map",
+    "main.04c91829.js.map": "/forlio/static/js/main.04c91829.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e57ded60.css",
+    "static/js/main.04c91829.js"
+  ]
+}
