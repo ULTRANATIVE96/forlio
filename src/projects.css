@@ -1,0 +1,111 @@
+/* src/styles/projects.css */
+
+/* Main layout */
+.projects-container {
+  padding: 1.5rem;
+}
+
+.projects-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout for cards */
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card styling */
+.project-card {
+  border: 4px solid transparent;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card inner area */
+.project-inner {
+  height: 16rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text content */
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(238, 238, 229);
+}
+
+.project-desc {
+  color: lch(98.15% 1.06 18.86);
+  font-size:large;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 0.5rem;
+}
+
+/* Button styling */
+.project-btn {
+  position: relative;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(14, 236, 70);
+  border-radius: 0.5rem;
+  color: rgb(12, 12, 12);
+  font-weight: 600;
+  overflow: hidden;
+  cursor: pointer;
+  background: darkgray ;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-btn:hover {
+  background-color: #1778b8; /* blue-700 */
+}
+
+.project-btn.featured:hover {
+  filter: brightness(1.25);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Button background image */
+.project-btn-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  border-radius: 0.5rem;
+}
+
+.project-btn span {
+  position: relative;
+  z-index: 2;
+}
