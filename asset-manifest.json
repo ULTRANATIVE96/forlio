@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/forlio/static/css/main.d49bb551.css",
+    "main.css": "/forlio/static/css/main.ac427797.css",
     "main.js": "/forlio/static/js/main.22ec697c.js",
     "index.html": "/forlio/index.html",
-    "main.d49bb551.css.map": "/forlio/static/css/main.d49bb551.css.map",
+    "main.ac427797.css.map": "/forlio/static/css/main.ac427797.css.map",
     "main.22ec697c.js.map": "/forlio/static/js/main.22ec697c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d49bb551.css",
+    "static/css/main.ac427797.css",
     "static/js/main.22ec697c.js"
   ]
 }
