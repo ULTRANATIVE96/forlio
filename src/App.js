@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Buttons from "./Buttons";
 import Languages from "./languages";
 import Projects from "./projects";
-
-// Don't import Projects here if it's meant to open in a new tab
 
 function App() {
   useEffect(() => {
@@ -12,13 +11,13 @@ function App() {
       const body = document.body;
 
       if (scrollY < 300) {
-        body.style.backgroundColor = "#6200ffff"; // Blue
+        body.style.backgroundColor = "#6200ffff";
       } else if (scrollY < 600) {
-        body.style.backgroundColor = "#5550bbff"; // Purple
+        body.style.backgroundColor = "#5550bbff";
       } else if (scrollY < 900) {
-        body.style.backgroundColor = "#7e6ce6ff"; // Cyan
+        body.style.backgroundColor = "#7e6ce6ff";
       } else {
-        body.style.backgroundColor = "#7fe1eeff"; // Light gray
+        body.style.backgroundColor = "#7fe1eeff";
       }
     };
 
@@ -27,10 +26,18 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Buttons />
-      <Languages />
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Buttons />
+            <Languages />
+          </>
+        }
+      />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
   );
 }
 
