@@ -10,4 +10,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </BrowserRouter>
 );
->>>>>>> 4a3056a145c192493dc36a9e2a0922a92e0be018
