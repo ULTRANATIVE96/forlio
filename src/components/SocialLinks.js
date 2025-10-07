@@ -13,7 +13,7 @@ function SocialLinks() {
         <FaGithub size={30} />
       </a>
       <a
-        href="https://linkedin.com/nhlayiseko hlungwani"
+        href="https://linkedin.com/nhlayiseko-hlungwani"
         target="_blank"
         rel="noopener noreferrer"
       >

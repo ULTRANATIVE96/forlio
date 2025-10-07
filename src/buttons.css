@@ -1,20 +1,15 @@
-.buttons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, #f8f8f8 0%, #ececec 100%);
-}
+/* === Orbit Animation Fix === */
 
-/* === Profile Layout with 3 Links Around Image === */
+/* The container that holds everything */
 .profile-layout {
   position: relative;
   width: 300px;
   height: 300px;
   margin: 40px auto;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
+/* Keep the image above background but below buttons */
 .image-container {
   position: absolute;
   top: 50%;
@@ -26,167 +21,26 @@
   overflow: hidden;
   border: 3px solid #0078d7;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  z-index: 2; /* ✅ Slightly above background */
 }
 
-.circle-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* === Position the Buttons === */
+/* Orbit container for links */
 .nav-link {
   position: absolute;
-  transform: translate(-50%, -50%);
-}
-/*
-.contact {
-  top: 15%;
-  left: 50%;
-}
-
-.projects {
-  top: 50%;
-  left: +5%;
+  top: 35%;
+  left: 23%;
+  transform-origin: center;
+  animation: orbit 12s linear infinite;
+  z-index: 3; /* ✅ Keep links on top of image */
 }
 
-.cv {
-  top: 50%;
-  right: 0%;
-  transform: translate(50%, -50%);
-}
-*/
-/* === Button Style === */
-.btn {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #0078d7;
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap;
-}
-
-.btn:hover {
-  background: #005fa3;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 120, 215, 0.4);
-  transform: translate(-10%, -0%) scale(1.05);
-  transition: 0.4s ease;
-}
-
-/* Divider */
-.divider {
-  width: 11%;
-  height: 2px;
-  background: #15d635;
-  margin: 30px 0;
-}
-
-/* About Section */
-.about-section {
-  max-width: 800px;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  color: #0078d7;
-  margin-bottom: 12px;
-}
-
-.about-text {
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.contact-details {
-  margin-bottom: 20px;
-  color: #555;
-}
-
-/* Interests */
-.interests {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.interests span {
-  background: #e6f0ff;
-  color: #005fa3;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  transition: 0.3s ease;
-}
-
-.interests span:hover {
-  background: #82d326;
-}
-
-.profile-layout {
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
-
-
-.profile-layout {
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
-.image-container:hover {
-  box-shadow: 0 0 20px rgba(0, 120, 215, 0.4);
-  transform: translate(-50%, -50%) scale(1.05);
-  transition: 0.4s ease;
-}
-
-/* Hide when scrolling down */
-.hide {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.6s, transform 0.6s;
-}
-
+/* Adjust orbit radius */
 @keyframes orbit {
   0%   { transform: rotate(0deg) translateX(160px) rotate(0deg); }
   100% { transform: rotate(360deg) translateX(160px) rotate(-360deg); }
 }
 
-.profile-layout {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 40px auto;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-/* Orbit container for each link */
-.nav-link {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform-origin: center;
-  animation: orbit 15s linear infinite;
-}
-
-/* Offset each link by rotation delay */
+/* Stagger each button with animation delay */
 .contact {
   animation-delay: 0s;
 }

@@ -41,7 +41,7 @@ function Buttons() {
             
             {/* Profile picture center */} 
             <div className="image-container"> 
-                <img src="mepc.jpg" alt="profile" className="circle-image" /> 
+                <img src="mepc.jpg" alt="me" className="circle-image" /> 
                 </div> 
                 
                 {/* Download CV on the right */} 
@@ -54,7 +54,7 @@ function Buttons() {
          
           <div className="about-section"> 
             <h2 className="section-title">About Me</h2> 
-            
+
 <p className="about-text"> 
 I’m Divine Nhlayiseko Hlungwani 
 - a freelance web developer and Computer Science diploma student (2025). 
@@ -65,8 +65,8 @@ creative problem-solving to build efficient and engaging digital solutions.
               
               <div className="contact-details"> 
                 <p><strong>Name:</strong> Divine Nhlayiseko</p> 
-                <p><strong>Phone:</strong> +27 82 123 4567</p>
-                <p><strong>Email:</strong> divinehlungwani@example.com</p>
+                <p><strong>Phone:</strong> +27 761824735</p>
+                <p><strong>Email:</strong> hlayisekohh7@gmail.com</p>
                 
                  </div> <div className="interests"> 
                     <span>🌍 Worldbuilding</span> 
@@ -78,3 +78,4 @@ creative problem-solving to build efficient and engaging digital solutions.
                 
 ); }
  export default Buttons;
+
