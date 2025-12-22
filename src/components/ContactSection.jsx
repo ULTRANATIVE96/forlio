@@ -126,13 +126,19 @@ emailjs.send(
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a target="_blank" href="#">
+                <a target="_blank" 
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/nhlayiseko-hlungwani-79886833b">
                   <Linkedin />
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" 
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/hlayisekohlungwani.hlayza">
                   <Facebook />
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" 
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/divine_hlayza">
                   <Instagram />
                 </a>
               </div>
