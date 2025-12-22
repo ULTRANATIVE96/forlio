@@ -33,7 +33,7 @@ export const AboutSection =()=>{
                      Get In Touch
                   </a>
 
-                  <a href="RESUME DIVINE.pdf" 
+                  <a href="../assets/div.pdf" 
                   className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition transition-colors duration-300">
                      DownLoad CV
                   </a>
