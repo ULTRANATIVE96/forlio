@@ -117,7 +117,7 @@ emailjs.send(
                 <div>
                   <h4 className="font-medium">Location</h4>
                   <p className="text-muted-foreground">
-                    Johannesburg, Soweto, South Africa
+                    Gauteng, Soweto, South Africa
                   </p>
                 </div>
               </div>

@@ -16,13 +16,13 @@ export const AboutSection =()=>{
                     Passionate SoftWare Developer
                 </h3>
 
-                <p className="text-muted-foreground">With over 3 years of experience in SoftWare develement, I specialize
-                   in crating responsive,accesible and performant web,Java and Python I.A
-                   applications using modern technologies. 
+                <p className="text-muted-foreground">With over 3 years of experience in SoftWare development, I specialize
+                   in creating responsive,accesible and performance web,Java and Python A.I
+                   applications using modern technologies.
                 </p>
 
                 <p className="text-muted-foreground">
-                    I'm passionate About dealing with elegent solutiions to complex problems and
+                    I'm passionate About dealing with elegent solutions to complex problems and
                     algorithms, constantly learning new technologies and different types of programming
                     languages to stay at the frontend of ever-evolving technologies
                 </p>
@@ -33,7 +33,8 @@ export const AboutSection =()=>{
                      Get In Touch
                   </a>
 
-                  <a href="../assets/div.pdf" 
+                  <a  href="/div.pdf"
+                      download="Divine_Nhlayiseko_CV.pdf"
                   className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition transition-colors duration-300">
                      DownLoad CV
                   </a>
