@@ -53,13 +53,14 @@ export const ProjectSection =() =>{
                         <img 
                         src={project.image} 
                         alt={project.title} 
-                        className="w-full object-cover transition-transform duration-500 group-hover:scsle-110"/>
+                        className="w-full object-cover transition-transform duration-500 group-hover:scale-110"/>
                         </div>
 
                         <div className="p-6">
                             <div className="flex flex-wrap gap-2 mb-4">
-                            {project.tags.map((tag)=>(
+                            {project.tags.map((tag,index)=>(
                                 <span
+                                key={index}
                                 className="px-2 py-1 ext-xs border font-medium rounded-full bg-primary/20 text-secondary-foregorund"
                                 >{tag}</span>
                             ))}    
@@ -73,14 +74,14 @@ export const ProjectSection =() =>{
                             <div className="flex space-x-3">
                                 <a  
                                 href={project.demourl} 
-                                target="blank"
+                                target="_blank"
                                 className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                     {" "}
                                     <ExternalLink size={20}/>
                                 </a>
                                 <a 
                                 href={project.githuburl}
-                                target="blank"
+                                target="_blank"
                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                 >
                                     <Github size={20}/>

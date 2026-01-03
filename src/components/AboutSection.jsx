@@ -1,9 +1,9 @@
 import {Briefcase, Code, User} from "lucide-react"
-
+import cv from "../assets/div.pdf"
 export const AboutSection =()=>{
 
     return (
-          <section id="about" className="py-24  px-4 realtive">
+          <section id="about" className="py-24  px-4 relative">
         {" "}
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -33,7 +33,7 @@ export const AboutSection =()=>{
                      Get In Touch
                   </a>
 
-                  <a  href="/div.pdf"
+                  <a  href={cv}
                       download="Divine_Nhlayiseko_CV.pdf"
                   className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition transition-colors duration-300">
                      DownLoad CV

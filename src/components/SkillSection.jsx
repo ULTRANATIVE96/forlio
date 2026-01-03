@@ -32,7 +32,7 @@ export const SkillSection =()=>{
 
     const filteredSkills = skills.filter((skill)=> activeCategory === "all" ||
 skill.category === activeCategory);
-    return(<scetion 
+    return(<section 
         id="skills" 
         className="py-24 px-4 relative bg-secondary/30"
         >
@@ -79,5 +79,5 @@ skill.category === activeCategory);
             </div>
         </div>
 
-        </scetion>)
+        </section>)
 }
