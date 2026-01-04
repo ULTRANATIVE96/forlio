@@ -1,5 +1,5 @@
 import {Briefcase, Code, User} from "lucide-react"
-import cv from "../assets/div.pdf"
+import cv from "../assets/Nhlayiseko_Divine_Hlungwani_CV.pdf"
 export const AboutSection =()=>{
 
     return (
